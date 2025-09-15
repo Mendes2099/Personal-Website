@@ -51,6 +51,8 @@
 
       <div class="hero-img" data-aos="zoom-in-left" data-aos-duration="2500">
         <img src="images/man1.png" alt="person-img">
+        <img src="images/man1.png" alt="person-img">
+        <img src="images/man1.png" alt="person-img">
       </div>
     </div>
 
@@ -73,6 +75,15 @@
         <p>Satisfied <br> Clients</p>
       </div>
     </div>
+    <footer> Developed by João Mendes (curret year) trademark </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const currentYear = new Date().getFullYear();
+        const footer = document.querySelector('footer');
+        footer.innerHTML = `Developed by João Mendes © ${currentYear} trademark`;
+      });
+    </script>
+
   </section>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
