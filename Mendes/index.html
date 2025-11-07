@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ============================================= -->
+    <!--  META & BASIC SETUP                           -->
+    <!-- ============================================= -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>João Mendes | Software Developer</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="João Mendes — Software Developer building intelligent assistants, web apps, and real-world solutions. View projects, services, and contact João for collaborations.">
+    <meta name="keywords"
+        content="João Mendes, Software Developer, Python, AI Assistant, Elf Ripper, Web Development, CS50, Portfolio">
+    <meta name="author" content="João Mendes">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/images/Favicon.png" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- ============================================= -->
+    <!--  NAVBAR                                       -->
+    <!-- ============================================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+
+            <!-- Brand -->
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#home">
+                <span class="h3 fw-bold d-block d-lg-none">João Mendes</span>
+                <img src="assets/images/me.jpeg" class="d-none d-lg-block rounded-circle aos-init aos-animate"
+                    data-aos="fade-down" data-aos-delay="500" alt="Portrait of João Mendes" loading="lazy">
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stack">Tech Stack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- //NAVBAR -->
+
+    <!-- ============================================= -->
+    <!--  CONTENT WRAPPER                              -->
+    <!-- ============================================= -->
+    <div id="content-wrapper">
+
+        <!-- HERO -->
+        <section id="home" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">
+                            I'm a <span class="text-brand">Software Developer</span>
+                        </h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+                            My name is João Filipe Pinheiro Mendes. I design modern digital
+                            solutions.
+                        </p>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="./assets/Files/JoãoMendesCV.pdf" download class="btn btn-brand me-3">
+
+                                Curriculum Vitae:
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+                                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                    <path
+                                        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z" />
+                                </svg></a>
+                            <a href="tel:+351915474777" class="link-custom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg> Phone: (+351) 915 474 777
+                            </a>
+                        </div>
+                        <br>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="col-auto" data-aos="fade-up" data-aos-delay="1200">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/jo%C3%A3ofilipemendes/" target="_blank">
+                                <i class="lab la-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Mendes2099" target="_blank">
+                                <i class="lab la-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //HERO -->
+
+        <!-- ABOUT -->
+        <section id="about" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-down" data-aos-delay="300">
+                    <div class="col-lg-8">
+                        <h1 class="text-brand">ABOUT ME</h1>
+                    </div>
+                </div>
+
+                <!-- Intro -->
+                <div class="row mb-5" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-12">
+                        <div class="bg-base p-4 rounded-4 shadow-effect">
+                            <h4 class="mb-3">My background</h4>
+                            <div class="lead fs-6">
+                                <p class="mb-2">
+                                    I'm a pragmatic software developer who loves building modern apps with the latest
+                                    tech that solve real problems.
+                                </p>
+                                <p class="mb-2">
+                                    I specialise in joining <strong>backend</strong> tech with modern frontend
+                                    technologies to create
+                                    functional and appealing apps. I'm also exploring integrating AI services into
+                                    user facing products. I started with Harvard's <strong>CS50</strong> course and have
+                                    since focused on production ready apps, including an <strong>AI powered WhatsApp
+                                        assistants</strong> and work of charitable foundations.
+                                </p>
+                                <p class="mb-0">
+                                    Outside development I train at the gym, practise martial arts, and enjoy gaming
+                                    hobbies that keep my problem solving sharp and my focus strong.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <!-- EDUCATION & CERTIFICATION -->
+                    <div class="col-lg-6">
+                        <h4 class="mb-4" data-aos="fade-up">Education & Certification</h4>
+                        <div class="row gy-4">
+
+                            <!-- CESAE -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                                <div
+                                    class="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="mb-2">CESAE Digital</h5>
+                                        <p class="text-brand small mb-1">Software Developer Course — (2023)</p>
+                                        <p class="tiny mb-3">
+                                            Java, Swift, Laravel, SQL & Git. Built 6 full projects from e-commerce to
+                                            mobile apps.
+                                        </p>
+                                    </div>
+                                    <a href="./assets/Files/Certificado Software Developer - CESAE.pdf" target="_blank"
+                                        class="link-custom small">
+                                        <i class="las la-certificate"></i> View Certification
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- IEFP -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                                <div
+                                    class="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="mb-2">IEFP Python Professional</h5>
+                                        <p class="text-brand small mb-1">Advanced Python — (2025)</p>
+                                        <p class="tiny mb-3">
+                                            Python, Pandas, Flask, MySQL. Built 2 full projects including a password
+                                            generator/manager, Inventory manager ,etc...
+                                        </p>
+                                    </div>
+                                    <a href="https://iefp.pt/cert/2025/py-pro-2099" target="_blank"
+                                        class="link-custom small">
+                                        <i class="las la-certificate"></i> View Certification
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- HARVARD CS50 -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                                <div
+                                    class="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="mb-2">Harvard CS50</h5>
+                                        <p class="text-brand small mb-1">Computer Science — (2025)</p>
+                                        <p class="tiny mb-3">
+                                            C, Python, SQL, Flask, etc.. Final project: Website + Flask Backend comming
+                                            soon.
+                                        </p>
+                                    </div>
+                                    <a href="https://certificates.cs50.io/7d9f2a1c" target="_blank"
+                                        class="link-custom small text-brand">
+                                        <i class="las la-certificate"></i> View Certification
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- EXPERIENCE -->
+                    <div class="col-lg-6">
+                        <h4 class="mb-4" data-aos="fade-up">Experience</h4>
+                        <div class="row gy-4">
+
+                            <!-- BOSCH API -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                                <div
+                                    class="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="mb-2">People-Management API</h5>
+                                        <p class="text-brand small mb-1">BOSCH Powertools — (2023–2024)</p>
+                                        <p class="tiny mb-3">
+                                            Java Quarkus + React + PostgreSQL. Real-time sync app for sevreal dozens of
+                                            local users.
+                                        </p>
+                                    </div>
+                                    <a href="#about" class="link-custom small">
+                                        <i class="lab la-github"></i> Private Repo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- ELF RIPPER -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                                <div
+                                    class="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="mb-2">Elf Ripper VSCode Extension</h5>
+                                        <p class="text-brand small mb-1">BOSCH Communications — (2024)</p>
+                                        <p class="tiny mb-3">
+                                            1000+ downloads. Extracts & formats ELF binaries in one click. Saved
+                                            firmware
+                                            developers hunderds of
+                                            hours.
+                                        </p>
+                                    </div>
+                                    <a href="https://github.com/hmfcpt/elf-ripper-extension" target="_blank"
+                                        class="link-custom small">
+                                        <i class="lab la-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- FREELANCE -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                                <div
+                                    class="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="mb-2">Freelance Developer</h5>
+                                        <p class="text-brand small mb-1">Self-Employed — (Present)</p>
+                                        <p class="tiny mb-3">
+                                            AI WhatsApp bot (Pix + Sheets) for 50+ shops. Miscellaneous work on a
+                                            charitable foundation.
+                                        </p>
+                                    </div>
+                                    <a href="#about" class="link-custom small">
+                                        <i class="lab la-github"></i> Private Repo
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //ABOUT -->
+
+        <!-- TECH STACK -->
+        <section id="stack" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-down">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">TECH STACK</h6>
+                        <h1>Some of my tools</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="lab la-python la-2x"></i></div>
+                            <h6 class="mb-0">Python</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="50">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="lab la-java la-3x"></i></div>
+                            <h6 class="mb-0">Java</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="lab la-js-square la-2x"></i></div>
+                            <h6 class="mb-0">TypeScript</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="lab la-js-square la-2x"></i></div>
+                            <h6 class="mb-0">JavaScript</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="las la-coffee la-2x"></i></div>
+                            <h6 class="mb-0">Quarkus</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="las la-vial la-2x"></i></div>
+                            <h6 class="mb-0">Jest</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="lab la-react la-2x"></i></div>
+                            <h6 class="mb-0">React.js</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="450">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="lab la-node-js la-2x"></i></div>
+                            <h6 class="mb-0">Node.js</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="lab la-html5 la-2x"></i></div>
+                            <h6 class="mb-0">HTML5</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="550">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="lab la-css3 la-2x"></i></div>
+                            <h6 class="mb-0">CSS3</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="las la-wind la-2x"></i></div>
+                            <h6 class="mb-0">Tailwind</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="650">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="las la-paint-brush la-2x"></i></div>
+                            <h6 class="mb-0">Shadcn/UI</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="700">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="las la-database la-2x"></i></div>
+                            <h6 class="mb-0">PostgreSQL</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="750">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="las la-server la-2x"></i></div>
+                            <h6 class="mb-0">MySQL</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="las la-hdd la-2x"></i></div>
+                            <h6 class="mb-0">SQLite</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="850">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="las la-code-branch la-2x"></i></div>
+                            <h6 class="mb-0">Git</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="900">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="lab la-github la-2x"></i></div>
+                            <h6 class="mb-0">GitHub</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="950">
+                        <div class="service p-3 bg-base rounded-4 shadow-effect text-center h-100">
+                            <div class="iconbox rounded-4 mb-2 mx-auto"><i class="las la-cogs la-2x"></i></div>
+                            <h6 class="mb-0">GitHub Actions</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //TECH STACK -->
+
+        <!-- SERVICES -->
+        <section id="services" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-down" data-aos-delay="300">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">SERVICES</h6>
+                        <h1>What I Do</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4"><i class="las la-laptop-code"></i></div>
+                            <h5 class="mt-4 mb-2">Front-End Development</h5>
+                            <p>Building modern, responsive, and accessible web interfaces using HTML, CSS, JS,
+                                and React.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="800">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4"><i class="las la-server"></i></div>
+                            <h5 class="mt-4 mb-2">Back-End Development</h5>
+                            <p>Fast and scalable back-ends with Python, integrated with APIs
+                                and databases.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4"><i class="las la-robot"></i></div>
+                            <h5 class="mt-4 mb-2">AI & Automation</h5>
+                            <p>AI assistants and workflow automations such a WhatsApp bot
+                                targeted for small businesses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES -->
+
+        <!-- PROJECTS -->
+        <section id="projects" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-down">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">PROJECTS</h6>
+                        <h1>Recent Work</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+                    <!-- Personal Portfolio -->
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect h-100 d-flex flex-column">
+                            <div class="card-custom-image rounded-4">
+                                <img src="./assets/images/HCJ.png" class="rounded-4" alt="Portfolio" loading="lazy">
+                            </div>
+                            <div class="card-custom-content p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h4>Personal Portfolio</h4>
+                                    <p class="tiny">
+                                        Lightning-fast, responsive showcase. Built with Bootstrap + AOS animations.
+                                        Backend implementation coming soon.
+                                    </p>
+                                </div>
+                                <a href="https://github.com/Mendes2099/Portfolio" target="_blank"
+                                    class="link-custom small mt-3">
+                                    <i class="lab la-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Elf Ripper -->
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-custom rounded-4 bg-base shadow-effect h-100 d-flex flex-column">
+                            <div class="card-custom-image rounded-4">
+                                <img src="./assets/images/Code.jfif" class="rounded-4" alt="Elf Ripper" loading="lazy">
+                            </div>
+                            <div class="card-custom-content p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h4>Elf Ripper VSCode Extension</h4>
+                                    <p class="tiny">
+                                        One-click .ELF file extraction. 1k+ downloads. Saved devs 1000's +
+                                        hours by
+                                        increasing productivity.
+                                    </p>
+                                </div>
+                                <a href="https://github.com/hmfcpt/elf-ripper-extension" target="_blank"
+                                    class="link-custom small mt-3">
+                                    <i class="lab la-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //PROJECTS -->
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-down" data-aos-delay="300">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">TESTIMONIALS</h6>
+                        <h1>What People Say</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="review shadow-effect bg-base p-4 rounded-4 h-100">
+                            <div class="text-brand h5 mb-3">
+                                ★★★★★
+                            </div>
+                            <p class="mb-4">"João is incredibly dedicated. He's always helping out."</p>
+                            <div class="person">
+                                <h5 class="mb-0">Bruno</h5>
+                                <p class="mb-0">Instructor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="review shadow-effect bg-base p-4 rounded-4 h-100">
+                            <div class="text-brand h5 mb-3">
+                                ★★★★★
+                            </div>
+                            <p class="mb-4">"Always experimenting, always learning. His AI assistant project is
+                                genuinely impressive."</p>
+                            <div class="person">
+                                <h5 class="mb-0">Tássio</h5>
+                                <p class="mb-0">Tech Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="900">
+                        <div class="review shadow-effect bg-base p-4 rounded-4 h-100">
+                            <div class="text-brand h5 mb-3">
+                                ★★★★★
+                            </div>
+                            <p class="mb-4">"His attention to detail and problem-solving skills make him a valuable team
+                                member."</p>
+                            <div class="person">
+                                <h5 class="mb-0">Carlos</h5>
+                                <p class="mb-0">Senior Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //TESTIMONIALS -->
+
+        <!-- CONTACT -->
+        <section id="contact" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+
+                    <!-- Title -->
+                    <div class="col-lg-8 pb-4" data-aos="fade-up">
+                        <h6 class="text-brand">CONTACT</h6>
+                        <h1>Want to hire me?</h1>
+                    </div>
+
+                    <!-- Form -->
+                    <!-- <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                        <form id="contact-form" class="row g-lg-3 gy-3" action="/submit" method="post">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter your name" name="nome"
+                                    required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Enter your email" name="email"
+                                    required />
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" placeholder="Enter a subject" name="topico" />
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="mensagem" rows="4" class="form-control"
+                                    placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="form-group col-12 d-grid">
+                                <button type="submit" class="btn btn-brand"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-send"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+                                    </svg> Send message</button>
+                            </div>
+                        </form>
+                    </div> -->
+
+                    <!-- ONE-CLICK RECRUITER BUTTONS -->
+                    <div class="col-lg-8 mt-5" data-aos="fade-up" data-aos-delay="500">
+                        <!-- <p class="lead mb-4">Pick one that works for you:</p> -->
+
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <!-- TEAMS -->
+                            <a href="https://teams.microsoft.com/l/meeting/new?subject=Interview%20with%20João%20Mendes"
+                                target="_blank" class="btn d-flex align-items-center gap-2 px-4 py-3"
+                                style="background:#3d2f81; color:white;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-microsoft-teams" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.186 4.797a2.42 2.42 0 1 0-2.86-2.448h1.178c.929 0 1.682.753 1.682 1.682zm-4.295 7.738h2.613c.929 0 1.682-.753 1.682-1.682V5.58h2.783a.7.7 0 0 1 .682.716v4.294a4.197 4.197 0 0 1-4.093 4.293c-1.618-.04-3-.99-3.667-2.35Zm10.737-9.372a1.674 1.674 0 1 1-3.349 0 1.674 1.674 0 0 1 3.349 0m-2.238 9.488-.12-.002a5.2 5.2 0 0 0 .381-2.07V6.306a1.7 1.7 0 0 0-.15-.725h1.792c.39 0 .707.317.707.707v3.765a2.6 2.6 0 0 1-2.598 2.598z" />
+                                    <path
+                                        d="M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.68.68 0 0 1-.682.682H.682A.68.68 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945z" />
+                                </svg>
+                                Schedule Teams Call
+                            </a>
+
+                            <!-- WHATSAPP -->
+                            <a href="https://wa.me/351915474777?text=Hi%20João%2C%20I’d%20love%20to%20chat%20about%20a%20role!"
+                                target="_blank" class="btn d-flex align-items-center gap-2 px-4 py-3 text-white"
+                                style="background:#075E54;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                                WhatsApp Me
+                            </a>
+
+                            <!-- GOOGLE CALENDAR -->
+                            <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Interview+with+João+Mendes&details=Let%27s+talk+about+your+role!&sf=true"
+                                target="_blank" class="btn d-flex align-items-center gap-2 px-4 py-3 text-white"
+                                style="background:#4285F4;">
+                                <svg width="20" height="20" viewBox="0 0 256 262" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#fff"
+                                        d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" />
+                                    <path fill="#fff"
+                                        d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" />
+                                    <path fill="#fff"
+                                        d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" />
+                                    <path fill="#fff"
+                                        d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" />
+                                </svg>
+                                Google Meet
+                            </a>
+                        </div>
+
+                        <small class="d-block mt-3 text-muted">
+                            One click → we’re scheduled. Zero sign-up needed.
+                        </small>
+                    </div>
+                    <!-- /ONE-CLICK BUTTONS -->
+
+                </div>
+            </div>
+        </section>
+        <!-- //CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">© Developed by João Mendes <span id="footer-year"></span>.</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="#" id="scrollToTopButton">
+                                <i class="las la-arrow-circle-up" data-aos="fade-up" data-aos-delay="300"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //FOOTER -->
+
+    </div>
+    <!-- //CONTENT WRAPPER -->
+
+    <!-- ============================================= -->
+    <!--  SCRIPTS                                      -->
+    <!-- ============================================= -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Footer Year -->
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

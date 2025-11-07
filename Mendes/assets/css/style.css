@@ -1,0 +1,519 @@
+/* Importa a fonte "Bai Jamjuree" do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+/* Define variáveis que podem ser usadas em todo o código */
+:root {
+  /* Cores */
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #033f47;
+  --color-base2: #022a30;
+  --color-brand: #3bba9c;
+  --color-brand2: #1edbaf;
+  /* Largura da barra lateral */
+  --sidbar-width: 240px;
+  /* Fonte padrão */
+  --font-base: "Bai Jamjuree";
+}
+
+/* Aplica algumas variáveis acima definidas a todo o body */
+body {
+  background-color: var(--color-base2);
+  color: var(--color-body);
+  font-family: var(--font-base), sans-serif;
+}
+
+/* Define a cor e o peso da fonte para os cabeçalhos de h1 a h6 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+/* Remove o sublinhado dos links e define a cor e a transição */
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease;
+}
+
+/* Define a cor do link ao passar o cursor sobre ele */
+a:hover {
+  color: var(--color-brand);
+}
+
+/* Define as propriedades para as imagens */
+img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 2rem;
+}
+
+/* Define o tamanho da fonte para o elemento com a classe .lab.la-java */
+.lab.la-java {
+  font-size: 48px;
+}
+
+/* Define a cor do texto para a classe .text-brand */
+.text-brand {
+  color: var(--color-brand);
+}
+
+/* Define a cor de fundo para a classe .bg-base */
+.bg-base {
+  background-color: var(--color-base);
+}
+
+/* Define as propriedades para o elemento com a classe .full-height */
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Define as propriedades para o shadow effect */
+.shadow-effect {
+  transition: all 0.5s;
+}
+
+/* Define o shadow effect ao passar o cursor sobre o elemento */
+.shadow-effect:hover {
+  box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+/* Define as propriedades para o elemento com a classe .iconbox */
+.iconbox {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: var(--color-brand);
+  color: var(--color-base);
+}
+
+/* Define as propriedades para o botão scrollToTop */
+#scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out, all 0.4s;
+  z-index: 9999;
+}
+
+/* Define as propriedades para o elemento número de telefone */
+.phone-number {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* Define as propriedades para o elemento número de telefone. Especificamente para quando a largura do ecrã é menor que 767px */
+@media (max-width: 767px) {
+  .phone-number {
+    font-size: 0.95rem;
+  }
+}
+
+/* Define a cor de fundo para a navbar */
+.navbar {
+  background-color: var(--color-base);/
+}
+
+/* Define as propriedades para os links da navbar */
+.navbar .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Define a cor para os links da navbar quando o cursor está sobre ela */
+.navbar .nav-link:hover {
+  color: var(--color-brand);
+}
+
+/* Define a cor para o link ativo da navbar */
+.navbar .nav-link.active {
+  color: var(--color-brand);
+}
+
+/* Define a estilização da navbar. Especificamente para quando a largura do ecrã é menor que  992 pixels */
+@media (min-width: 992px) {
+
+  /* Define a altura mínima, largura, gradiente e imagem de fundo para a navbar */
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidbar-width);
+    background: linear-gradient(rgba(3, 23, 26, 0.911), rgba(3, 63, 71, 0.795)),
+      url(../images/sidebar-img.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Define uma borda com espessura e cor personalizadas para a iamgem de fundo da navbar*/
+  .navbar-brand img {
+    border: 8px solid var(--color-brand);
+  }
+
+  /* Define o preenchimento à esquerda para o conteúdo principal, a fim de criar um espaço para a barra de navegação */
+  #content-wrapper {
+    padding-left: var(--sidbar-width);
+  }
+}
+
+/* Define o preenchimento e o peso da fonte para todos os botões */
+.btn {
+  padding: 12px 28px;
+  font-weight: 700;
+}
+
+
+/* Define a cor de fundo, cor da borda e cor do texto do botão de marca */
+.btn-brand {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-base);
+}
+
+/* Define a cor de fundo, cor do texto e cor da borda dos botões quando o cursor está sobre ela e quando ele é pressionado */
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--color-brand2);
+  color: var(--color-base);
+  border-color: var(--color-brand2);
+}
+
+/* Define a propriedade de peso da fonte e a posição dos links personalizados */
+.link-custom {
+  font-weight: 700;
+  position: relative;
+}
+
+/* Define um pseudo-elemento ::after em um link personalizado com uma transição */
+.link-custom::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-brand);
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+}
+
+/* Define a largura do pseudo-elemento ::after em um link personalizado quando o cursor está sobre ele */
+.link-custom:hover::after {
+  width: 100%;
+}
+
+/* *Formatção de imagens na secção PROJETOS */
+
+/* Define o overflow e a altura da imagem das cards personalizadas */
+.card-custom .card-custom-image {
+  overflow: hidden;
+  height: 300px;
+}
+
+/* Define a altura, largura e ajuste do objeto da imagem das cards */
+.card-custom .card-custom-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+/* Define a transformação da imagem da carta personalizada quando o cursor está sobre elas */
+.card-custom:hover .card-custom-image img {
+  transform: scale(1.1);
+}
+
+/**Separação de imagens em 2 categorias para aplicação diferente de valores */
+/* Define o overflow da segunda imagem das cards personalizadas  */
+.card-custom .card-custom-image2 {
+  overflow: hidden;
+}
+
+/* Define a altura, largura e ajuste do objeto da segunda imagem da cards personalizadas  */
+.card-custom .card-custom-image2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+/* Define a transformação da segunda imagem da cards personalizadas quando o cursor está sobre elas */
+.card-custom:hover .card-custom-image2 img {
+  transform: scale(1.1);
+}
+
+/* Define o background, borda e cor da fonte para a classe form-control dentro da div #Contacto */
+#contact .form-control {
+  background-color: var(--color-base);
+  border-color: var(--color-base);
+  color: var(--color-body);
+}
+
+/* Define a cor da borda quando o controle de formulário estiver em foco */
+#contact .form-control:focus {
+  border-color: var(--color-brand);
+  box-shadow: none;
+}
+
+/* Define a cor do texto de placeholder para a classe form-control dentro da div #Contacto */
+#contact .form-control::placeholder {
+  color: var(--color-body);
+}
+
+/* Define a altura para o input com a classe form-control dentro da div #Contacto */
+#contact input.form-control {
+  height: 44px;
+}
+
+/* Define o tamanho e estilo dos ícones de rede social dentro da classe social-icons */
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-base);
+  border-radius: 100px;
+  font-size: 24px;
+}
+
+/** Implementação de um Botão Google a partir do website https://uiverse.io/ */
+.button {
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 35px;
+  align-items: center;
+  border: solid black 2px;
+  outline: none;
+}
+
+.svg {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.button .text {
+  z-index: 10;
+  font-size: 14px;
+}
+
+.button:hover .text {
+  animation: text forwards 0.3s;
+  /*color: white;*/
+}
+
+@keyframes text {
+  from {
+    color: black;
+  }
+
+  to {
+    color: white;
+  }
+}
+
+.svg {
+  z-index: 6;
+}
+
+.button:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-radius: 300px;
+  animation: wave1 2.5s ease-in-out forwards;
+}
+
+.button:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-radius: 300px;
+  animation: wave2 2.5s ease-in-out forwards;
+}
+
+@keyframes wave1 {
+  0% {
+    z-index: 1;
+    background: #eb4335;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  1% {
+    z-index: 1;
+    background: #eb4335;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  25% {
+    z-index: 1;
+    background: #eb4335;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+
+  26% {
+    z-index: 3;
+    background: #34a853;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  50% {
+    z-index: 3;
+    background: #34a853;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+
+  70% {
+    z-index: 3;
+    background: #34a853;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+
+  100% {
+    z-index: 3;
+    background: #34a853;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    z-index: 2;
+    background: #fbbc05;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  11% {
+    z-index: 2;
+    background: #fbbc05;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  35% {
+    z-index: 2;
+    background: #fbbc05;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+
+  39% {
+    z-index: 2;
+    background: #fbbc05;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+
+  40% {
+    z-index: 4;
+    background: #4285f4;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  64% {
+    z-index: 4;
+    background: #4285f4;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+
+  100% {
+    z-index: 4;
+    background: #4285f4;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+}
+
+.button:hover .red {
+  animation: disappear 0.1s forwards;
+  animation-delay: 0.1s;
+}
+
+.button:hover .yellow {
+  animation: disappear 0.1s forwards;
+  animation-delay: 0.3s;
+}
+
+.button:hover .green {
+  animation: disappear 0.1s forwards;
+  animation-delay: 0.7s;
+}
+
+.button:hover .blue {
+  animation: disappear 0.1s forwards;
+  animation-delay: 1.1s;
+}
+
+@keyframes disappear {
+  from {
+    filter: brightness(1);
+  }
+
+  to {
+    filter: brightness(100);
+  }
+}
+
+.button {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.button .text {
+  padding: 0 20px;
+}
