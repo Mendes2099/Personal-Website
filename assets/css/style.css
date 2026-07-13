@@ -293,6 +293,50 @@ img {
   font-size: 24px;
 }
 
+/* Ensure cards in grids (Experience, Education, Projects) have equal height */
+.equal-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.equal-card .card-body,
+.equal-card .card-custom-content,
+.equal-card>.bg-base,
+.equal-card>.card-custom-content {
+  flex: 1 1 auto;
+}
+
+/* Make item blocks (used in the CV-style pages) behave consistently */
+.item-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-block .item-header {
+  margin-bottom: 12px;
+}
+
+.item-block .item-bullets {
+  margin-top: 8px;
+}
+
+/* Make the About section's two columns stretch equally and allow their inner rows to fill space */
+#about .col-lg-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+#about .col-lg-6>.row {
+  flex: 1 1 auto;
+}
+
+/* Ensure the main content inside equal-card expands to fill available height */
+.equal-card>div {
+  flex: 1 1 auto;
+}
+
 /** Implementação de um Botão Google a partir do website https://uiverse.io/ */
 .button {
   padding: 10px;

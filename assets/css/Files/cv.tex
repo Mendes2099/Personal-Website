@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape João Mendes} \\ \vspace{1pt}
+    \small +351-915-474-777 $|$ \href{mailto:x@x.com}{\underline{mendes19966@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/joãofilipemendes/}} $|$
+    \href{https://github.com/...}{\underline{github.com/Mendes2099}}
+\end{center}
+\section{Summary}
+
+Full Stack Software Engineer with experience building scalable web applications, AI-powered solutions and cloud-native services using Node.js, React, TypeScript, Java and Python. Experienced in Agile environments and Google Cloud using various LLM's and AI tools. EU Citizen, fluent in English, Spanish and Portuguese, available for remote opportunities across Europe.
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}: JavaScript • TypeScript • Java • Python \\
+    \textbf{AI}: LLM • Claude Code • Codex • Gemini • Vertex AI \\
+    \textbf{Frontend}: React • Next.js • HTML5 • CSS3 \\
+    \textbf{Backend}: Node.js • Express • Quarkus • REST APIs • Microservices • Webhooks\\
+    \textbf{Cloud \& DevOps}: Google Cloud Platform • Docker • Git • GitHub Actions • CI/CD \\  
+    \textbf{Databases}: PostgreSQL • MongoDB • MySQL \\
+    \textbf{Methodologies}: Agile • Scrum
+  }}
+\end{itemize}
+\section{Experience}
+  \resumeSubHeadingListStart
+
+
+    \resumeSubheading
+      {Full Stack Software Engineer \& Technical Lead}{Dec 2025 -- Present}
+      {Land IT – TryEvo}{}
+      \resumeItemListStart
+        \resumeItem{Lead the development of an AI-powered recruitment platform used to automate candidate evaluation and hiring workflows.}
+        \resumeItem{Designed and implemented scalable backend services using Node.js, Express and MongoDB.}
+        \resumeItem{Developed modern user interfaces with React and TypeScript.}
+        \resumeItem{Integrated Google Vertex AI to automate interview transcription, candidate analysis and conversational AI features.}
+        \resumeItem{Built cloud-native services deployed on Google Cloud Run using Docker and automated deployments with GitHub Actions.}
+        \resumeItem{Implemented real-time communication using Server-Sent Events (SSE).}
+        \resumeItem{Worked closely with product stakeholders to define requirements and deliver features in Agile sprints.}
+      \resumeItemListEnd
+          \resumeSubheading
+      {Freelance Full Stack Developer}{Jul 2025 -- Jan 2026}
+      {Pérola Humana}{}
+      \resumeItemListStart
+        \resumeItem{Refactored and maintained the company's website, improving performance, SEO and accessibility.}
+        \resumeItem{Managed hosting infrastructure, domains and business email services.}
+        \resumeItem{Implemented multilingual support and ensured reliable production deployments.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Full Stack Software Engineer}{Jun 2023 -- Nov 2024}
+      {Bosch}{}
+      \resumeItemListStart
+        \resumeItem{Co-developed ELF-Ripper, an open-source Visual Studio Code extension with over 1,900 active users, helping firmware engineers analyse ELF binaries and visualize static memory allocation.}
+        \resumeItem{Designed and implemented backend services using Java (Quarkus) and REST APIs for IoT and robotics applications.}
+        \resumeItem{Developed responsive frontend features with React, Next.js and TypeScript for internal engineering tools.}
+        \resumeItem{Collaborated with international cross-functional teams following Agile/Scrum methodologies.}
+        \resumeItem{Participated in code reviews, testing and continuous integration to maintain software quality and reliability.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+  %-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{ELF-Ripper VS Code Extension} $|$ \emph{VS Code Extension, Firmware Analysis, ELF Binaries}}{Jun 2023 -- Nov 2024}
+          \resumeItemListStart
+            \resumeItem{Open-source Visual Studio Code extension used by more than 1,800 firmware engineers to analyse ELF binaries and visualize static memory allocation. Built during my time at Bosch and published on the VS Code Marketplace.}
+            \resumeItem{\href{https://github.com/hmfcpt/elf-ripper-extension/tree/main}{GitHub Repository}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AI-powered Recruitment Platform} $|$ \emph{React, Node.js, Google Cloud, Vertex AI}}{Dec 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Combining React, Node.js, Google Cloud and Vertex AI to automate interview transcription, candidate evaluation and recruitment workflows.}
+            \resumeItem{\href{https://landit-tryevo-web-806746762429.us-central1.run.app/app/vagas/}{Live Platform}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Harvard University (Online)}{12/2025}
+      {(CS50) Advanced Python}{12/2025}
+    \resumeSubheading
+      {Training Service of Ciriaco Cardoso}{11/2025}
+      {Programming (NQF Level 5)}{11/2025}
+    \resumeSubheading
+      {CESAE Digital (Porto, Portugal)}{10/2023}
+      {Software Development (NQF Level 4)}{10/2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
